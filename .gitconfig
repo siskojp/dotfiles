@@ -1,82 +1,82 @@
 [user]
-	name  = gcoguiec
-	email = g.coguiec@gmail.com
+ name  = gcoguiec
+ email = g.coguiec@gmail.com
 
 [color]
-	ui					= auto
-	diff				= auto
-	status			= auto
-	branch			=	auto
-	interactive	= auto
+ ui= auto
+ diff        = auto
+ status      = auto
+ branch      = auto
+ interactive = auto
 
 [push]
-	default = tracking
+ default = tracking
 
 [difftool]
-	prompt = false
+ prompt = false
 
 [difftool "meld"]
-	cmd = meld \"$LOCAL\" \"$REMOTE\"
+ cmd = meld \"$LOCAL\" \"$REMOTE\"
 
 [diff]
-	tool = meld
+ tool = meld
 
 [pack]
-	threads = 0
+ threads = 0
 
 [merge]
-	tool = meld
-	verbosity = 5
+ tool = meld
+ verbosity = 5
 
 [mergetool]
-	keepbackup = true
-	keeptemporaries = true
+ keepbackup = true
+ keeptemporaries = true
 
 [url "git@github.com:"]
-	insteadOf = "gh:"
-	pushInsteadOf = "github:"
-	pushInsteadOf = "git://github.com/"
+ insteadOf = "gh:"
+ pushInsteadOf = "github:"
+ pushInsteadOf = "git://github.com/"
 
 [url "git://github.com/"]
-	insteadOf = "github:"
+ insteadOf = "github:"
 
 [url "git@gist.github.com:"]
-	insteadOf = "gst:"
-	pushInsteadOf = "gist:"
-	pushInsteadOf = "git://gist.github.com/"
+ insteadOf = "gst:"
+ pushInsteadOf = "gist:"
+ pushInsteadOf = "git://gist.github.com/"
 
 [url "git://gist.github.com/"]
-	insteadOf = "gist:"
+ insteadOf = "gist:"
 
 [alias]
-	i			= init
-	st		= status
-	sto		= status --untracked=no
-	a			= add
-	ap		= add --patch
-	c			= commit -m
-	ca		= commit -a -m
-	co		= checkout
-	l			= log --graph
-	ll		= log --graph --pretty=oneline --abbrev-commit
-	o			= remote add origin
-	p			= push
-	po		= push -u origin
-	pl		= pull
-	b			= branch
-	ba		= branch -a
-	d			= diff
-	dc		= diff --cached
-	rs-1	= reset --soft HEAD^1
-	rs		= reset HEAD
-	r			= revert
-	c 		= clone
-	cr 		= clone --recursive
-	m			= merge
-	t			= tag
-	ta		= tag -a
-	s			= show
-	sm		= submodule
-	sms		= submodule summary
-	mt		= mergetool
-	cp		= cherry-pick
+ i    = init
+ st   = status
+ sto  = status --untracked=no
+ a    = add
+ ap   = add --patch
+ c    = commit -m
+ ca   = commit -a -m
+ co   = checkout
+ l    = log --graph
+ ll   = log --graph --pretty=oneline --abbrev-commit
+ o    = remote add origin
+ p    = push
+ po   = push -u origin
+ pl   = pull
+ b    = branch
+ ba   = branch -a
+ d    = diff
+ dc   = diff --cached
+ rs-1 = reset --soft HEAD^1
+ rs   = reset HEAD
+ r    = revert
+ c    = clone
+ cr   = clone --recursive
+ m    = merge
+ t    = tag
+ ta   = tag -a
+ s    = show
+ sm   = submodule
+ sms  = submodule summary
+ mt   = mergetool
+ cp   = cherry-pick
