@@ -3,7 +3,7 @@
  email = g.coguiec@gmail.com
 
 [color]
- ui= auto
+ ui          = auto
  diff        = auto
  status      = auto
  branch      = auto
