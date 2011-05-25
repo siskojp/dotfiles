@@ -60,7 +60,7 @@
 	l    = log --graph
 	ll   = log --graph --pretty=oneline --abbrev-commit
 	o    = remote add origin
-	p    = push -u
+	p    = push 
 	po   = push -u origin
 	pl   = pull
 	b    = branch
