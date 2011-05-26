@@ -69,7 +69,7 @@
  pl   = pull
  b    = branch
  ba   = branch -a
- bc   = branch --track
+ bt   = branch --track
  f    = fetch
  d    = diff
  dc   = diff --cached
