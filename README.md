@@ -15,7 +15,7 @@ A little advice for lazy programmers : alias g='git'
 	g i
 	g o git://...
 	g st
-	g a
+	g a .
 	g c "initial stuff."
  	g p
 	g ll
