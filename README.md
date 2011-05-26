@@ -10,15 +10,17 @@ This repository contain all the files related to my git workshop, please feel fr
 
 	cp .gitconfig ~
 
-A little advice for the laziest programmers : alias g='git'
+A little advice for lazy programmers : alias g='git'
 
 	g i
 	g o git://...
 	g st
 	g a
 	g c "initial stuff."
-  g p
+ 	g p
 	g ll
+
+<3
 
 #License
 No licenses, public domain.
