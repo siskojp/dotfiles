@@ -54,6 +54,7 @@
  sto  = status --untracked=no
  a    = add
  ap   = add --patch
+ rm   = remove
  c    = commit -m
  ca   = commit -a -m
  co   = checkout
@@ -67,8 +68,10 @@
  ba   = branch -a
  d    = diff
  dc   = diff --cached
+ rh-1 = reset --hard HEAD^1
+ rh   = reset --hard HEAD
  rs-1 = reset --soft HEAD^1
- rs   = reset HEAD
+ rs   = reset --soft HEAD
  r    = revert
  c    = clone
  cr   = clone --recursive
@@ -80,3 +83,10 @@
  sms  = submodule summary
  mt   = mergetool
  cp   = cherry-pick
+ sth  = stash
+ sths = stash save
+ sthl = stash list
+ stha = stash apply
+ sthd = stash drop
+ sthp = stash pop
+ sthc = stash clear
