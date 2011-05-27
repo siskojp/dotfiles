@@ -2,6 +2,57 @@
  name  = gcoguiec
  email = g.coguiec@gmail.com
 
+[tig]
+ show-rev-graph    = yes
+ tab-size          = 2
+ commit-encoding   = "UTF-8"
+ show-refs         = yes
+ show-date         = relative
+ show-line-numbers = no
+ show-author       = yes
+
+[tig "color"]
+ cursor         = yellow black normal
+ mode           = magenta default bold
+ status         = red default bold
+ title-focus    = white black
+ title-blur     = red black bold
+ date           = white default normal
+ author         = blue default bold
+ main-head      = yellow default bold
+ main-remote    = white default normal
+ main-commit    = white default bold
+ main-revgraph  = black default bold
+ main-tracked   = white default normal
+ main-tag       = green default bold
+ main-local-tag = green default bold
+ main-ref       = green default bold
+ stat-head      = white default normal
+ stat-section   = blue default bold
+ stat-staged    = green default bold
+ stat-unstaged  = red default bold
+ stat-untracked = magenta default bold
+ blame-id       = magenta default bold
+ tree-head      = white default bold
+ tree-dir       = yellow default bold
+ pp-author      = blue default bold
+ pp-commit      = white default bold
+ pp-merge       = yellow default bold
+ pp-date        = white default normal
+ pp-adate       = white default normal
+ pp-cdate       = white default normal
+ pp-refs        = magenta default bold
+ diff-add       = green default bold
+ diff-del       = red default bold
+ diff-header    = cyan default normal
+ diff-chunk     = white default normal 
+ diff-index     = cyan default normal
+
+[tig "bind"]
+ generic = C !git cherry-pick %(commit)
+ generic = F !git fetch
+ generic = P !git pull
+
 [color]
  ui          = auto
  diff        = auto
