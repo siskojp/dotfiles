@@ -112,9 +112,8 @@
  ca   = commit -a -m
  co   = checkout
  cob  = checkout -b
- l    = log --graph
+ l    = log --graph --pretty=format:'%C(red bold)%h%Creset -%C(yellow bold)%d%Creset %s %C(white)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
  ll   = log --graph --pretty=oneline --abbrev-commit
- lll  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
  o    = remote add origin
  p    = push
  po   = push -u origin
