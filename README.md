@@ -1,12 +1,14 @@
-git-files
+dotfiles
 =========
 
 #About
-This repository contain all the files related to my git workshop, please feel free to use these files to make your own git environment.
+This repository contain all the files related to my workshop, please feel free to use these files to make your own environment.
+
+![Preview](http://uppix.net/6/3/d/fc6361d267ee7ebd29cb06bad2e7d.png)
 
 #Installation
 
-	git clone git://github.com/gcoguiec/git-files.git
+	git clone git://github.com/gcoguiec/dotfiles.git
 
 	cp .gitconfig ~
 
