@@ -1,4 +1,4 @@
-dotfiles
+git.files
 =========
 
 #About
@@ -6,7 +6,7 @@ This repository contain all the files related to my workshop, please feel free t
 
 #Installation
 
-	git clone git://github.com/gcoguiec/dotfiles.git
+	git clone git://github.com/gcoguiec/git.files.git
 
 #Preview
 ![Preview](http://uppix.net/6/3/d/fc6361d267ee7ebd29cb06bad2e7d.png)
