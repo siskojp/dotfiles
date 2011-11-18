@@ -1,52 +1,52 @@
 [user]
- name  = gcoguiec
- email = g.coguiec@gmail.com
+ name = gcoguiec
+ email = gcoguiec@idealtechnology.net
 
 [tig]
- show-rev-graph    = yes
- tab-size          = 2
- commit-encoding   = "UTF-8"
- show-refs         = yes
- show-date         = relative
+ show-rev-graph = yes
+ tab-size = 2
+ commit-encoding = UTF-8
+ show-refs = yes
+ show-date = relative
  show-line-numbers = no
- show-author       = yes
+ show-author = yes
 
 [tig "color"]
- cursor         = yellow black normal
- mode           = magenta default bold
- status         = red default bold
- title-focus    = white black
- title-blur     = red black bold
- date           = white default normal
- author         = blue default bold
- main-head      = yellow default bold
- main-remote    = white default normal
- main-commit    = white default bold
- main-revgraph  = black default bold
- main-tracked   = white default normal
- main-tag       = green default bold
+ cursor = yellow black normal
+ mode = magenta default bold
+ status = red default bold
+ title-focus = white black
+ title-blur = red black bold
+ date = white default normal
+ author = blue default bold
+ main-head = yellow default bold
+ main-remote = white default normal
+ main-commit = white default bold
+ main-revgraph = black default bold
+ main-tracked = white default normal
+ main-tag = green default bold
  main-local-tag = green default bold
- main-ref       = green default bold
- stat-head      = white default normal
- stat-section   = blue default bold
- stat-staged    = green default bold
- stat-unstaged  = red default bold
+ main-ref = green default bold
+ stat-head = white default normal
+ stat-section = blue default bold
+ stat-staged = green default bold
+ stat-unstaged = red default bold
  stat-untracked = magenta default bold
- blame-id       = magenta default bold
- tree-head      = white default bold
- tree-dir       = yellow default bold
- pp-author      = blue default bold
- pp-commit      = white default bold
- pp-merge       = yellow default bold
- pp-date        = white default normal
- pp-adate       = white default normal
- pp-cdate       = white default normal
- pp-refs        = magenta default bold
- diff-add       = green default bold
- diff-del       = red default bold
- diff-header    = cyan default normal
- diff-chunk     = white default normal 
- diff-index     = cyan default normal
+ blame-id = magenta default bold
+ tree-head = white default bold
+ tree-dir = yellow default bold
+ pp-author = blue default bold
+ pp-commit = white default bold
+ pp-merge = yellow default bold
+ pp-date = white default normal
+ pp-adate = white default normal
+ pp-cdate = white default normal
+ pp-refs = magenta default bold
+ diff-add = green default bold
+ diff-del = red default bold
+ diff-header = cyan default normal
+ diff-chunk = white default normal
+ diff-index = cyan default normal
 
 [tig "bind"]
  generic = C !git cherry-pick %(commit)
@@ -54,10 +54,10 @@
  generic = P !git pull
 
 [color]
- ui          = auto
- diff        = auto
- status      = auto
- branch      = auto
+ ui = auto
+ diff = auto
+ status = auto
+ branch = auto
  interactive = auto
 
 [push]
@@ -66,11 +66,8 @@
 [difftool]
  prompt = false
 
-[difftool "meld"]
- cmd = meld \"$LOCAL\" \"$REMOTE\"
-
 [diff]
- tool = meld
+ tool = vimdiff
 
 [pack]
  threads = 0
@@ -84,64 +81,66 @@
  keeptemporaries = true
 
 [url "git@github.com:"]
- insteadOf = "gh:"
- pushInsteadOf = "github:"
- pushInsteadOf = "git://github.com/"
+ insteadOf = gh:
+ pushInsteadOf = github:
+ pushInsteadOf = git://github.com/
 
 [url "git://github.com/"]
- insteadOf = "github:"
+ insteadOf = github:
 
 [url "git@gist.github.com:"]
- insteadOf = "gst:"
- pushInsteadOf = "gist:"
- pushInsteadOf = "git://gist.github.com/"
+ insteadOf = gst:
+ pushInsteadOf = gist:
+ pushInsteadOf = git://gist.github.com/
 
 [url "git://gist.github.com/"]
- insteadOf = "gist:"
+ insteadOf = gist:
 
 [alias]
- i    = init
- st   = status
- sto  = status --untracked=no
- a    = add
- ap   = add --patch
- au   = add -u
- ai   = add --interactive
- rm   = remove
- c    = commit -m
- ca   = commit -a -m
- co   = checkout
- cob  = checkout -b
- l    = log --graph --pretty=format:'%C(red bold)%h%Creset -%C(yellow bold)%d%Creset %s %C(white)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
- ll   = log --graph --pretty=oneline --abbrev-commit
- o    = remote add origin
- p    = push
- po   = push -u origin
- pl   = pull
- b    = branch
- ba   = branch -a
- bt   = branch --track
- f    = fetch
- d    = diff
- dc   = diff --cached
- r    = reset
+ i = init
+ st = status
+ sto = status --untracked=no
+ a = add
+ ap = add --patch
+ au = add -u
+ ai = add --interactive
+ rm = remove
+ c = commit -m
+ ca = commit -a -m
+ cam = commit --amend
+ co = checkout
+ cob = checkout -b
+ l = log --graph --pretty=format:'%C(red bold)%h%Creset -%C(yellow bold)%d%Creset %s %C(white)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+ ll = log --graph --pretty=oneline --abbrev-commit
+ o = remote add origin
+ p = push
+ po = push -u origin
+ pl = pull
+ b = branch
+ ba = branch -a
+ bt = branch --track
+ f = fetch
+ d = diff
+ dc = diff --cached
+ dt = difftool    
+ r = reset
  rh-1 = reset --hard HEAD^1
- rh   = reset --hard HEAD
+ rh = reset --hard HEAD
  rs-1 = reset --soft HEAD^1
- rs   = reset --soft HEAD
- rv   = revert
- rb   = rebase
- c    = clone
- cr   = clone --recursive
- m    = merge
- t    = tag
- ta   = tag -a
- s    = show
- sm   = submodule
- sms  = submodule summary
- mt   = mergetool
- cp   = cherry-pick
- sth  = stash
+ rs = reset --soft HEAD
+ rv = revert
+ rb = rebase
+ c = clone
+ cr = clone --recursive
+ m = merge
+ t = tag
+ ta = tag -a
+ s = show
+ sm = submodule
+ sms = submodule summary
+ mt = mergetool
+ cp = cherry-pick
+ sth = stash
  sths = stash save
  sthl = stash list
  stha = stash apply
