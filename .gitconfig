@@ -131,6 +131,7 @@
  rs = reset --soft HEAD
  rv = revert
  rb = rebase
+ rbi = rebase -i
  c = clone
  cr = clone --recursive
  m = merge
