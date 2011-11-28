@@ -144,6 +144,8 @@
  cp = cherry-pick
  sth = stash
  sths = stash save
+ sthsp = stash save --patch
+ sthsk = stash save --keep-index
  sthl = stash list
  stha = stash apply
  sthd = stash drop
