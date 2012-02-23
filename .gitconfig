@@ -105,9 +105,8 @@
  au = add -u
  ai = add --interactive
  rm = remove
- c = commit -m
+ ci = commit -m
  ca = commit -a -m
- cam = commit --amend
  co = checkout
  cob = checkout -b
  l = log --graph --pretty=format:'%C(red bold)%h%Creset -%C(yellow bold)%d%Creset %s %C(white)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
