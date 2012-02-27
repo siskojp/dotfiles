@@ -107,6 +107,7 @@
  rm = remove
  ci = commit -m
  ca = commit -a -m
+ cam = commit --amend
  co = checkout
  cob = checkout -b
  l = log --graph --pretty=format:'%C(red bold)%h%Creset -%C(yellow bold)%d%Creset %s %C(white)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
@@ -117,6 +118,7 @@
  po = push -u origin
  pl = pull
  b = branch
+ br = branch -r
  ba = branch -a
  bt = branch --track
  f = fetch
