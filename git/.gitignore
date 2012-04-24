@@ -1,0 +1,11 @@
+# .gitignore common
+._*
+~*
+.DS_Store
+.Spotlight-V100
+.Trashes
+.tmp*
+.*.sw[a-z]
+.sublime*
+.sass-cache
+Thumb.db

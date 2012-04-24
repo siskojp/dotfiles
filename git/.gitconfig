@@ -1,6 +1,6 @@
 [user]
  name = gcoguiec
- email = gcoguiec@idealtechnology.net
+ email = gcoguiec@gmail.com
 
 [tig]
  show-rev-graph = yes
@@ -124,7 +124,7 @@
  f = fetch
  d = diff
  dc = diff --cached
- dt = difftool    
+ dt = difftool
  r = reset
  rh-1 = reset --hard HEAD^1
  rh = reset --hard HEAD
@@ -132,17 +132,22 @@
  rs = reset --soft HEAD
  rv = revert
  rb = rebase
+ rc = rebase --continue
+ rsk = rebase --skip
  rbi = rebase -i
+ rt = remote -v
  c = clone
  cr = clone --recursive
  m = merge
  t = tag
  ta = tag -a
+ tn = tag -n
  s = show
  sm = submodule
  sms = submodule summary
  mt = mergetool
  cp = cherry-pick
+ cpx = cherry-pick -x
  sth = stash
  sths = stash save
  sthsp = stash save --patch
@@ -152,3 +157,5 @@
  sthd = stash drop
  sthp = stash pop
  sthc = stash clear
+ uc = reset --soft HEAD^
+ fl = filelog -u
