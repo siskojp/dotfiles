@@ -157,5 +157,4 @@
  sthd = stash drop
  sthp = stash pop
  sthc = stash clear
- uc = reset --soft HEAD^
  fl = filelog -u
