@@ -9,3 +9,5 @@
 .sublime*
 .sass-cache
 Thumb.db
+VagrantFile
+.vagrant*
