@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# ack
+ln -sf $(pwd)/ack/ackrc $HOME/.ackrc

@@ -1,0 +1,40 @@
+--type-add=python=.cpy,.vpy
+--type-add=ruby=.haml,.rake,.rsel,.builder
+--type-add=html=.html.twig,.html.erb,.html.haml,.tpl,.mustache,.mu,.handlebars,.hbs,.hbars
+--type-add=js=.js.erb,.json
+--type-add=css=.sass,.scss,.less,.styl
+--type-set=markdown=.markdown,.md,.mdown
+--type-set=cucumber=.feature
+--type-set=puppet=.pp
+--type-set=rdoc=.rdoc
+--type-set=rspec=.rspec
+--type-set=coffeescript=.coffee
+--type-set=plaintext=.md,.mdown,.markdown,.mkdn,.textile,.rst,.txt
+--type-set=csv=.txt,.csv,.tsv
+--type-set=gettext=.pot,.po
+--type-set=plist=.plist
+--type-set=nib=.xib
+--type-set=xcode=.pbxproj,.pbxuser
+--type-set=groovy=.groovy
+--type-set=scala=.scala,.scl
+--ignore-dir=vendor
+--ignore-dir=log
+--ignore-dir=logs
+--ignore-dir=cache
+--ignore-dir=doc
+--ignore-dir=coverage
+--ignore-dir=gems
+--ignore-dir=.idea
+--ignore-dir=node_modules
+--ignore-dir=.sass-cache
+--sort-files
+--color
+--color-filename=bold red
+--color-match=bold yellow
+--follow
+--group
+--context=3
+--page=less -ixq4RSFX
+--all-types
+--smart-case
+--flush
