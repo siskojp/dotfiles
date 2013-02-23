@@ -1,6 +1,6 @@
 [user]
- name = gcoguiec
- email = gcoguiec@gmail.com
+ name = AUTHORNAME
+ email = AUTHOREMAIL
 
 [tig]
  show-rev-graph = yes

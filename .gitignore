@@ -1,0 +1,26 @@
+# .gitignore common
+._*
+*~
+*.DS_Store
+*.project
+*.settings
+.tmp*
+.*.sw[a-z]
+*.swp
+.Spotlight-V100
+.Trashes
+*sftp-settings.json
+*.sublime*
+*Thumb.db
+.sass-cache
+*.iml
+.vagrant
+Vagrantfile
+*nbproject
+*.idea
+*atlassian-ide-plugin.xml
+*catalog.xml
+
+# dotfiles related
+git/gitconfig.symlink
+
