@@ -23,6 +23,21 @@ zstyle ':completion:*:*:*:users' ignored-patterns \
         operator pcap postfix postgres privoxy pulse pvm quagga radvd \
         rpc rpcuser rpm shutdown squid sshd sync uucp vcsa xfs
 
+# Adjust the description on completion
+zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
+
+# Fuzzy matching of completions for when you mistype them
+zstyle ':completion:*' completer _complete _match _approximate
+zstyle ':completion:*:match:*' original only
+zstyle ':completion:*:approximate:*' max-errors 1 numeric
+
+# Ignore completion functions for commands you don’t have
+zstyle ':completion:*:functions' ignored-patterns '_*'
+
+# Completing process IDs with menu selection
+zstyle ':completion:*:*:kill:*' menu yes select
+zstyle ':completion:*:kill:*'   force-list always
+
 # use /etc/hosts and known_hosts for hostname completion
 [ -r /etc/ssh/ssh_known_hosts ] && _global_ssh_hosts=(${${${${(f)"$(</etc/ssh/ssh_known_hosts)"}:#[\|]*}%%\ *}%%,*}) || _global_ssh_hosts=()
 [ -r ~/.ssh/known_hosts ] && _ssh_hosts=(${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[\|]*}%%\ *}%%,*}) || _ssh_hosts=()
