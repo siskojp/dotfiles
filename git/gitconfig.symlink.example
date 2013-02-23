@@ -5,7 +5,6 @@
 [tig]
  show-rev-graph = yes
  tab-size = 2
- commit-encoding = UTF-8
  show-refs = yes
  show-date = relative
  show-line-numbers = no
@@ -110,7 +109,7 @@
  cam = commit --amend
  co = checkout
  cob = checkout -b
- l = log --graph --pretty=format:'%C(red bold)%h%Creset -%C(yellow bold)%d%Creset %s %C(white)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+ l = log --graph --pretty=format:'%C(blue bold)%h%Creset -%C(yellow bold)%d%Creset %s %C(white)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
  ll = log --graph --pretty=oneline --abbrev-commit
  rl = reflog
  o = remote add origin
