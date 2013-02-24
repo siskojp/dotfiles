@@ -2,6 +2,7 @@
 # No loop, just one execution per line (mainly to adjust the various options accordingly).
 
 brew update &>/dev/null
+brew install zsh
 brew install tmux
 brew install git --with-pcre
 brew install git-extras
