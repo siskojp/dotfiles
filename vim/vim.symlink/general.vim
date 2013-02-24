@@ -23,9 +23,10 @@ filetype indent on
 " syntax
 syntax on
 syntax enable
-"set t_Co=256
+set t_Co=256
 colorscheme solarized
 set background=dark
+hi Normal ctermfg=252 ctermbg=none
 
 " mouse
 set ttyfast

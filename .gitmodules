@@ -34,3 +34,6 @@
 [submodule "vim/vim.symlink/bundle/tabbar"]
 	path = vim/vim.symlink/bundle/tabbar
 	url = https://github.com/vim-scripts/TabBar.git
+[submodule "vim/vim.symlink/bundle/molokai"]
+	path = vim/vim.symlink/bundle/molokai
+	url = https://github.com/tomasr/molokai.git
