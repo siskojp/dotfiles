@@ -18,6 +18,7 @@ alias -- -='cd -'
 alias history='fc -l 1'
 alias mmv='noglob zmv -W'
 alias p='pwd'
+alias t='tree'
 
 # network
 alias dns="dscacheutil -flushcache"
@@ -61,7 +62,6 @@ alias -g NE="2> /dev/null"
 alias -g NS='| sort -n'
 alias -g NUL="> /dev/null 2>&1"
 alias -g PIPE='|'
-alias -g R=' > /c/aaa/tee.txt '
 alias -g RNS='| sort -nr'
 alias -g S='| sort'
 alias -g TL='| tail -20'
