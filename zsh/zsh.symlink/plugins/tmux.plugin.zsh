@@ -1,3 +1,3 @@
 # aliases
 alias tm='tmux'
-alias tml='tmux ls'
+alias tmls='tmux ls'

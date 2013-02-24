@@ -13,10 +13,10 @@ set-window-option -g window-status-format ' #I #W '
 set-window-option -g window-status-attr dim
 
 # bindings
-bind-key x      kill-pane
-bind-key X      kill-window
-bind-key q      confirm-before kill-session
-bind-key Q      confirm-before kill-server
+bind-key x kill-pane
+bind-key X kill-window
+bind-key q confirm-before kill-session
+bind-key Q confirm-before kill-server
 
 # screen alike features
 set-option -g prefix C-a

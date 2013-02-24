@@ -1,0 +1,12 @@
+# spawn a tmux session depending on the working directory
+function mux() {
+  if [[ -z $1 ]]; then
+    SESSION=$(basename $PWD);
+  else
+    SESSION=$1
+  fi
+  if ! tmux has-session -t $SESSION; then
+    tmux new-session -s $SESSION -n zsh -d
+  fi
+  tmux attach -t $SESSION
+}
