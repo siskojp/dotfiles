@@ -1,7 +1,7 @@
-.files
-======
+.dotfiles
+=========
 
-![Preview](http://uppix.net/6/3/d/fc6361d267ee7ebd29cb06bad2e7d.png)
+![Preview](http://uppix.net/0/c/a/9cb76c484ea4cbe94fb0020987eec.png)
 
 #License
 No licenses, public domain.
