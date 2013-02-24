@@ -23,4 +23,7 @@ Vagrantfile
 
 # dotfiles related
 git/gitconfig.symlink
+tmux/tmux-layouts/*
+!tmux/tmux-layouts/.gitkeep
+
 

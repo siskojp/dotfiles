@@ -5,8 +5,12 @@ function mux() {
   else
     SESSION=$1
   fi
-  if ! tmux has-session -t $SESSION; then
-    tmux new-session -s $SESSION -n zsh -d
+  if [[ -x $HOME/.tmux-layouts/$SESSION ]]; then
+    $HOME/.tmux-layouts/$SESSION
+  else
+    if ! tmux has-session -t $SESSION; then
+      tmux new-session -s $SESSION -n zsh -d
+    fi
+    tmux attach -t $SESSION
   fi
-  tmux attach -t $SESSION
 }
