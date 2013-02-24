@@ -9,6 +9,7 @@ brew install git-extras
 brew install tig
 brew install mercurial
 brew install binutils
+brew install coreutils
 brew install proctools
 brew install grc
 brew install autojump
