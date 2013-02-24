@@ -6,6 +6,7 @@ brew install tmux
 brew install git --with-pcre
 brew install git-extras
 brew install tig
+brew install mercurial
 brew install binutils
 brew install proctools
 brew install grc
@@ -27,7 +28,7 @@ brew install ngrep
 brew install reattach-to-user-namespace
 
 # python
-brew install readline sqlite gdbm --universal
+brew reinstall readline sqlite gdbm --universal
 brew install python --universal --framework
 `brew --prefix python`/bin/easy_install pip
 `brew --prefix python`/bin/pip install --upgrade distribute
