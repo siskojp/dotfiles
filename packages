@@ -45,3 +45,5 @@ brew install ruby --universal
 # vim
 brew install vim --with-lua --with-python --with-ruby --without-perl --without-tcl --without-mzscheme
 
+# node
+brew install node
