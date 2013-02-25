@@ -33,7 +33,7 @@ alias httpsniff="sudo ngrep -d 'en0' -t '^(GET|POST|PUT|DELETE|HEAD|PATCH) ' 'tc
 # deletion iterators
 alias rm_dstore="find . -type f -name '*.DS_Store' -ls -delete"
 alias rm_orig="find . -type f -name '*.orig' -ls -delete"
-alias rm_svn=alias rm_dstore="find . -type f -name '*.svn' -ls -delete"
+alias rm_svn="find . -type f -name '*.svn' -ls -delete"
 
 # globals
 alias -g ...='../..'
