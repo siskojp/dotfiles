@@ -13,6 +13,7 @@ setopt CORRECT
 setopt COMPLETE_IN_WORD
 setopt IGNORE_EOF
 setopt complete_aliases
+export REPORTTIME=10
 
 # history
 HISTFILE=~/.zsh_history

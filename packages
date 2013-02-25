@@ -28,6 +28,8 @@ brew install sshfs
 brew install rename
 brew install ngrep
 brew install reattach-to-user-namespace
+brew install mutt
+brew install watch
 
 # python
 brew reinstall readline sqlite gdbm --universal

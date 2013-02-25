@@ -1,8 +1,7 @@
 # classics
 alias s='subl'
 alias g='git'
-alias cls='clear'
-alias csl='cls'
+alias c='clear'
 alias cleqr='clear'
 alias r!='. ~/.zshrc'
 alias ls='gls --color=auto --group-directories-first'
