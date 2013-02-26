@@ -9,9 +9,9 @@ export ZSH_VENDORS=$HOME/.zsh-vendors
 if [[ -d $ZSH ]]; then
     for config_file ($ZSH/**/*.zsh) source $config_file
     for fn_file ($ZSH/functions/*) source $fn_file
+    fpath=($ZSH/completions/ $fpath)
     autoload -U compinit
     compinit
-    for config_file ($ZSH/completions/*) source $config_file
 fi
 
 # use .localrc for SUPER SECRET CRAP that you don't

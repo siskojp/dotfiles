@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # This a modified version of holman's bootstrap script
 
 DOTFILES_ROOT="`pwd`"

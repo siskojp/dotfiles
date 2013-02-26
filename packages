@@ -30,6 +30,7 @@ brew install ngrep
 brew install reattach-to-user-namespace
 brew install mutt
 brew install watch
+brew install play
 
 # python
 brew reinstall readline sqlite gdbm --universal
