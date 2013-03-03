@@ -29,11 +29,18 @@ brew install sshfs
 brew install rename
 brew install ngrep
 brew install reattach-to-user-namespace
-brew install mutt
+brew install mutt --with-sidebar-patch --with-trash-patch
+brew install offline-imap
+brew install notmuch
+brew install urlview
+brew install msmtp
+brew install contacts
 brew install watch
 brew install play
 brew install scala
+brew install sbt
 brew install android
+brew install the_silver_searcher
 
 # python
 brew reinstall readline sqlite gdbm --universal

@@ -37,3 +37,6 @@
 [submodule "vim/vim.symlink/bundle/molokai"]
 	path = vim/vim.symlink/bundle/molokai
 	url = https://github.com/tomasr/molokai.git
+[submodule "mutt"]
+	path = mutt
+	url = git@github.com:gcoguiec/muttfiles.git
