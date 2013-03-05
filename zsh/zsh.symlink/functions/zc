@@ -1,0 +1,2 @@
+# zsh calculator function
+zc () { for exp in $argv; do print "$exp = $(( exp ))"; done; }
