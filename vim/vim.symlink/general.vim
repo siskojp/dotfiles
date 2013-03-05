@@ -56,3 +56,7 @@ set statusline+=\ %f\ %m\ %r
 set statusline+=%=
 set statusline+=%l/%L:%v
 set statusline+=\
+
+" gutter
+let g:gitgutter_enabled = 1
+
