@@ -41,6 +41,7 @@ brew install scala
 brew install sbt
 brew install android
 brew install the_silver_searcher
+brew install nmap
 
 # python
 brew reinstall readline sqlite gdbm --universal
