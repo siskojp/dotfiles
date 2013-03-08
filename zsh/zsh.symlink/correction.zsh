@@ -1,5 +1,5 @@
 # options
-setopt correct_all
+setopt correct
 
 # don't correct listed commands
 alias man='nocorrect man'
