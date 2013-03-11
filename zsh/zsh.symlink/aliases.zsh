@@ -1,6 +1,5 @@
 # classics
 alias s='subl'
-alias g='git'
 alias c='clear'
 alias cleqr='clear'
 alias r!='. ~/.zshrc'

@@ -1,0 +1,8 @@
+# alias git to g and show the working copy status by default (thx octodots)
+function g {
+    if [[ $# > 0 ]]; then
+        git $@
+    else
+        git status --short --branch
+    fi
+}

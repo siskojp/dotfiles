@@ -1,4 +1,4 @@
-# .gitignore common
+# .gitignore global
 ._*
 *~
 *.DS_Store
