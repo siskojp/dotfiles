@@ -1,5 +1,8 @@
 # path
-export PATH=`brew --prefix ruby`/bin:$PATH
+export PATH=$PATH:$HOME/.rvm/bin
+
+# bootstrap
+source $HOME/.rvm/scripts/rvm
 
 # aliases
 alias r='rvm'
