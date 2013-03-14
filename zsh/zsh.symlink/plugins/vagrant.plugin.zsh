@@ -1,5 +1,6 @@
 # aliases
 alias va='vagrant'
+alias vap='vagrant up'
 alias vai='vagrant init'
 alias vas='vagrant ssh'
 alias vaba='vagrant box add'
