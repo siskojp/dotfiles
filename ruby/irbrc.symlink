@@ -35,7 +35,7 @@ end
 
 # load hirb
 IRB.conf[:PROMPT][:CUSTOM] = {
-  :PROMPT_I => ">> ",
+  :PROMPT_I => "\e[1m\e[34m>>\e[0m ",
   :PROMPT_S => "%l>> ",
   :PROMPT_C => ".. ",
   :PROMPT_N => ".. ",
@@ -69,10 +69,6 @@ elsif defined?(Rails) && !Rails.env.nil? && defined?(ActiveRecord)
   end
 else
   # nothing to do
-end
-
-if defined?(Mongoid)
-  Mongoid.config.logger = Logger.new($stdout)
 end
 
 # annotate column names of an AR model
