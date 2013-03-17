@@ -10,7 +10,7 @@ servers = (
     address = "irc.freenode.net";
     chatnet = "symfony";
     port = "6667";
-    autoconnect = "yes";
+    autoconnect = "no";
     chatnets = {
       symfony = { type = "IRC"; nick = "gcoguiec"; };
       fr = { type = "IRC"; nick = "gcoguiec"; };

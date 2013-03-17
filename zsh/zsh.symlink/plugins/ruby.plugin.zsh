@@ -5,7 +5,8 @@ export PATH=$PATH:$HOME/.rvm/bin
 source $HOME/.rvm/scripts/rvm
 
 # aliases
-alias r='rvm'
+alias r='rails'
+alias rk='rake'
 alias b='bundle'
 alias bi='bundle install'
 alias bu='bundle update'
