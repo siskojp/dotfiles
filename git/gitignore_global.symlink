@@ -20,3 +20,4 @@ Vagrantfile
 *.idea
 *atlassian-ide-plugin.xml
 *catalog.xml
+.rake_tasks

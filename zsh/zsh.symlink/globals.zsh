@@ -1,5 +1,5 @@
 # path
-PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+PATH=$HOME/bin:$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 PATH=`brew --prefix proctools`/bin:$PATH
 PATH=`brew --prefix watch`/bin:$PATH
 export PATH
