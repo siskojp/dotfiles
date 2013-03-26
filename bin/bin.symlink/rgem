@@ -1,0 +1,1 @@
+http --body GET https://rubygems.org/api/v1/gems/$1|pjson

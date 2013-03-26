@@ -2,6 +2,9 @@
  name = AUTHORNAME
  email = AUTHOREMAIL
 
+[core]
+    excludesfile = "~/.gitignore_global"
+
 [tig]
  show-rev-graph = yes
  tab-size = 2
