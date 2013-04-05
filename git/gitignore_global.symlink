@@ -14,7 +14,7 @@
 *Thumb.db
 .sass-cache
 *.iml
-.vagrant
+.vagrant*
 Vagrantfile
 *nbproject
 *.idea
