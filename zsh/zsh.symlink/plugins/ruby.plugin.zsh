@@ -6,6 +6,7 @@ source $HOME/.rvm/scripts/rvm
 
 # aliases
 alias r='rails'
+alias z='zeus'
 alias rk='rake'
 alias b='bundle'
 alias bi='bundle install'
