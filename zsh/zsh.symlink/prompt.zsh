@@ -128,7 +128,7 @@ set_prompt() {
   export PROMPT="\
 %{$fg[red]%}┌─(%{$fg[white]%}%n%{$fg[red]%}@%{$fg[white]%}%m%{$fg[red]%})(%{$fg[white]%}%c%{$fg[red]%})%{$reset_color%}$(git_prompt_info)$(git_time_since_commit)
 %{$fg[red]%}└─%{$reset_color%}\
-%{$fg[white]%}› %(!.#.⚡)%{$reset_color%} "
+%{$fg[white]%}› %(!.#.☁)%{$reset_color%} "
 }
 
 precmd() {
