@@ -1,9 +1,3 @@
-# path
-export PATH=$PATH:$HOME/.rvm/bin
-
-# bootstrap
-source $HOME/.rvm/scripts/rvm
-
 # aliases
 alias r='rails'
 alias z='zeus'

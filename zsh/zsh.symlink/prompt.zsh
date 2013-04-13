@@ -2,8 +2,8 @@ autoload colors && colors
 
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}("
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[green]%})"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[red]%}("
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[red]%})"
 ZSH_THEME_GIT_PROMPT_DIRTY=":%{$fg[red]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN=":%{$fg[cyan]%}✔"
 
@@ -111,23 +111,23 @@ function git_time_since_commit() {
       fi
 
       if [ "$HOURS" -gt 24 ]; then
-          echo "%{$fg[green]%}($COLOR${DAYS}d%{$fg[green]%})"
+          echo "%{$fg[red]%}($COLOR${DAYS}d%{$fg[red]%})"
       elif [ "$MINUTES" -gt 60 ]; then
-          echo "%{$fg[green]%}($COLOR${HOURS}h${SUB_MINUTES}m%{$fg[green]%})"
+          echo "%{$fg[red]%}($COLOR${HOURS}h${SUB_MINUTES}m%{$fg[red]%})"
       else
-          echo "%{$fg[green]%}($COLOR${MINUTES}m%{$fg[green]%})"
+          echo "%{$fg[red]%}($COLOR${MINUTES}m%{$fg[red]%})"
       fi
     else
       COLOR="$ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL"
-      echo "%{$fg[green]%}($COLOR%{$fg[green]%})"
+      echo "%{$fg[red]%}($COLOR%{$fg[red]%})"
     fi
   fi
 }
 
 set_prompt() {
   export PROMPT="\
-%{$fg[green]%}┌─(%{$fg[white]%}%n%{$fg[green]%}@%{$fg[white]%}%m%{$fg[green]%})(%{$fg[white]%}%c%{$fg[green]%})%{$reset_color%}$(git_prompt_info)$(git_time_since_commit)
-%{$fg[green]%}└─%{$reset_color%}\
+%{$fg[red]%}┌─(%{$fg[white]%}%n%{$fg[red]%}@%{$fg[white]%}%m%{$fg[red]%})(%{$fg[white]%}%c%{$fg[red]%})%{$reset_color%}$(git_prompt_info)$(git_time_since_commit)
+%{$fg[red]%}└─%{$reset_color%}\
 %{$fg[white]%}› %(!.#.⚡)%{$reset_color%} "
 }
 
