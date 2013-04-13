@@ -1,7 +1,5 @@
 # path
 PATH=$HOME/bin:$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
-PATH=`brew --prefix proctools`/bin:$PATH
-PATH=`brew --prefix watch`/bin:$PATH
 export PATH
 
 # colors
@@ -10,13 +8,3 @@ export LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;32'
 export CLICOLOR=true
-
-# locales
-export LANG="en_US.UTF-8"
-export LC_COLLATE="en_US.UTF-8"
-export LC_CTYPE="en_US.UTF-8"
-export LC_MESSAGES="en_US.UTF-8"
-export LC_MONETARY="en_US.UTF-8"
-export LC_NUMERIC="en_US.UTF-8"
-export LC_TIME="en_US.UTF-8"
-export LC_ALL="en_US.UTF-8"

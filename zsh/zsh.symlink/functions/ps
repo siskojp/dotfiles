@@ -1,5 +1,0 @@
-# delegate the "afx" option to the pstree command
-function ps() {
-  if [[ "$1" == "afx" ]]; then colourify pstree -w -U;
-  else colourify ps $@; fi
-}
