@@ -17,7 +17,6 @@ alias history='fc -l 1'
 alias mmv='noglob zmv -W'
 alias p='pwd'
 alias t='tree'
-alias j='autojump'
 
 # deletion iterators
 alias rm_dstore="find . -type f -name '*.DS_Store' -ls -delete"
