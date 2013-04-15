@@ -118,6 +118,7 @@
  o = remote add origin
  p = push
  po = push -u origin
+ psod = push --recurse-submodules=on-demand
  pl = pull
  b = branch
  br = branch -r
@@ -146,6 +147,7 @@
  tn = tag -n
  s = show
  sm = submodule
+ smf = submodule foreach
  sms = submodule summary
  mt = mergetool
  cp = cherry-pick
