@@ -18,7 +18,6 @@ alias ...='cd ../..'
 alias -- -='cd -'
 alias history='fc -l 1'
 alias mmv='noglob zmv -W'
-alias p='pwd'
 alias t='tree'
 
 # network
