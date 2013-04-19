@@ -98,6 +98,14 @@
 [url "git://gist.github.com/"]
  insteadOf = gist:
 
+[url "git@bitbucket.org:"]
+ insteadOf = bb:
+ pushInsteadOf = bitbucket:
+ pushInsteadOf = git://bitbucket.org/
+
+[url "git://bitbucket.org/"]
+ insteadOf = bitbucket:
+
 [alias]
  i = init
  st = status
