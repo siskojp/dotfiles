@@ -1,0 +1,9 @@
+# change the play framework env.
+penv() {
+    if [ ! -d $PWD/conf ]; then
+        echo "no conf directory found, are-you at the root of your play project ?";
+        exit;
+    fi
+    echo "switching to '$1' environment.";
+    export _JAVA_OPTIONS="-Dconfig.file=$PWD/conf/$1.conf -Dlogger.file=$PWD/conf/$1-logger.xml";
+}
