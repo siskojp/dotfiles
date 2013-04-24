@@ -1,5 +1,5 @@
 alias p='play'
-alias pr='play run'
+alias pr='play "~run"'
 alias pc='play "~compile"'
 alias pt='play test'
 alias pto='play test-only'
