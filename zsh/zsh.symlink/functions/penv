@@ -5,5 +5,5 @@ penv() {
         exit;
     fi
     echo "switching to '$1' environment.";
-    export _JAVA_OPTIONS="-Dconfig.file=$PWD/conf/$1.conf -Dlogger.file=$PWD/conf/$1-logger.xml";
+    export _JAVA_OPTIONS=$_JAVA_OPTIONS" -Dconfig.file=$PWD/conf/$1.conf -Dlogger.file=$PWD/conf/$1-logger.xml";
 }

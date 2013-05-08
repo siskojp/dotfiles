@@ -35,6 +35,5 @@
 --group
 --context=3
 --page=less -ixq4RSFX
---all-types
 --smart-case
 --flush
