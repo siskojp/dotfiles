@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+
+spec = Gem::Specification.find_by_name(ARGV[0])
+
+puts spec.gem_dir
+
