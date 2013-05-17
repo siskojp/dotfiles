@@ -21,6 +21,7 @@ alias mmv='noglob zmv -W'
 alias t='tree'
 
 # network
+alias m="mosh"
 alias dns="dscacheutil -flushcache"
 alias whois="whois -h whois-servers.net"
 alias wan="dig +short myip.opendns.com @resolver1.opendns.com"
