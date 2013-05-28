@@ -111,6 +111,7 @@
  st = status
  sto = status --untracked=no
  a = add
+ aa = add --all
  ap = add --patch
  au = add -u
  ai = add --interactive
