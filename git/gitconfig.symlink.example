@@ -75,6 +75,8 @@
  threads = 0
 
 [merge]
+ ff=yes
+ commit=no
  tool = meld
  verbosity = 5
 
@@ -129,6 +131,7 @@
  po = push -u origin
  psod = push --recurse-submodules=on-demand
  pl = pull
+ plrb = pull --rebase
  b = branch
  br = branch -r
  ba = branch -a
