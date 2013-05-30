@@ -19,6 +19,7 @@ alias -- -='cd -'
 alias history='fc -l 1'
 alias mmv='noglob zmv -W'
 alias t='tree'
+alias ct='pygmentize -O style=vs -g'
 
 # network
 alias m="mosh"
