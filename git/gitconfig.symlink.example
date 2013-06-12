@@ -174,3 +174,4 @@
  sthp = stash pop
  sthc = stash clear
  fl = filelog -u
+ rename = mv -f
