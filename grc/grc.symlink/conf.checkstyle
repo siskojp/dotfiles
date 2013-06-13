@@ -1,0 +1,7 @@
+# path
+regexp=^[\w|\/|\.]+\:
+colours=bold blue
+=======
+# string
+regexp=\'[\w|\W]+\'
+colours=bold yellow
