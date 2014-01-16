@@ -46,7 +46,7 @@ brew install python --universal --framework
 brew install ruby --universal
 `brew --prefix ruby`/bin/gem update --system
 `brew --prefix ruby`/bin/gem update --no-rdoc --no-ri
-brew install rbenv
+brew install rbenv ruby-build
 
 # vim
 brew install vim --with-lua --with-python --with-ruby --without-perl --without-tcl --without-mzscheme
