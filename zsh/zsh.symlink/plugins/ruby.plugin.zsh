@@ -4,7 +4,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # aliases
 alias r='rails'
-alias z='zeus'
+alias sp='spring'
 alias rk='rake'
 alias b='bundle'
 alias bi='bundle install'
