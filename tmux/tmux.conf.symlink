@@ -33,6 +33,7 @@ bind-key x kill-pane
 bind-key X kill-window
 bind-key q confirm-before kill-session
 bind-key Q confirm-before kill-server
+bind -n C-k clear-history
 
 # screen alike features
 set-option -g prefix C-a

@@ -13,25 +13,12 @@ end
 
 require 'rubygems' rescue nil
 require 'wirble'
+require 'hirb'
 require 'awesome_print'
 
 # load wirble
 Wirble.init
 Wirble.colorize
-
-unless IRB.version.include?('DietRB')
-  IRB::Irb.class_eval do
-    def output_value
-      ap @context.last_value
-    end
-  end
-else # MacRuby
-  IRB.formatter = Class.new(IRB::Formatter) do
-    def inspect_object(object)
-      object.ai
-    end
-  end.new
-end
 
 # load hirb
 IRB.conf[:PROMPT][:CUSTOM] = {
@@ -43,35 +30,13 @@ IRB.conf[:PROMPT][:CUSTOM] = {
 }
 IRB.conf[:PROMPT_MODE] = :CUSTOM
 IRB.conf[:AUTO_INDENT] = true
-
-if ENV.include?('RAILS_ENV')
-  if !Object.const_defined?('RAILS_DEFAULT_LOGGER')
-    require 'logger'
-    Object.const_set('RAILS_DEFAULT_LOGGER', Logger.new(STDOUT))
+IRB::Irb.class_eval do
+  def output_value
+    ap @context.last_value
   end
-
-  def sql(query)
-    ActiveRecord::Base.connection.select_all(query)
-  end
-
-  if ENV['RAILS_ENV'] == 'test'
-    require 'test/test_helper'
-  end
-
-# for rails 3
-elsif defined?(Rails) && !Rails.env.nil? && defined?(ActiveRecord)
-  if Rails.logger
-    Rails.logger =Logger.new(STDOUT)
-    ActiveRecord::Base.logger = Rails.logger
-  end
-  if Rails.env == 'test'
-    require 'test/test_helper'
-  end
-else
-  # nothing to do
 end
 
-# annotate column names of an AR model
-def show(obj)
-  y(obj.send("column_names"))
+if ENV.include?('RAILS_ENV') && !Object.const_defined?('RAILS_DEFAULT_LOGGER')
+  require 'logger'
+  RAILS_DEFAULT_LOGGER = Logger.new(STDOUT)
 end
