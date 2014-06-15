@@ -1,8 +1,6 @@
-# path
-export PATH=$PATH:$HOME/.rvm/bin
-
-# bootstrap
-source $HOME/.rvm/scripts/rvm
+# rbenv
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # aliases
 alias r='rails'
