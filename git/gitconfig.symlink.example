@@ -75,8 +75,6 @@
  threads = 0
 
 [merge]
- ff=yes
- commit=no
  tool = meld
  verbosity = 5
 
@@ -108,12 +106,16 @@
 [url "git://bitbucket.org/"]
  insteadOf = bitbucket:
 
+[branch]
+ autosetuprebase = always
+
 [alias]
  i = init
  st = status
  sto = status --untracked=no
  a = add
  aa = add --all
+ air = add --ignore-removal
  ap = add --patch
  au = add -u
  ai = add --interactive
@@ -131,7 +133,7 @@
  po = push -u origin
  psod = push --recurse-submodules=on-demand
  pl = pull
- plrb = pull --rebase
+ up = !git remote update -p; git merge --ff-only @{u}
  b = branch
  br = branch -r
  ba = branch -a
@@ -174,4 +176,3 @@
  sthp = stash pop
  sthc = stash clear
  fl = filelog -u
- rename = mv -f
