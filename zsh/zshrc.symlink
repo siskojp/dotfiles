@@ -17,5 +17,3 @@ fi
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
 [[ -a ~/.rc.conf ]] && . ~/.rc.conf
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
